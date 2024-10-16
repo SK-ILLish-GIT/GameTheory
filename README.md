@@ -24,7 +24,7 @@ FrontEnd : https://game-theory-imu4wwaga-skillishgits-projects.vercel.app/login
 
 BackEnd : https://gametheory-9xjf.onrender.com
 
-## Report :[ https://drive.google.com/file/d/1l_0rhZgxs2FK8jHkyU85nPDUqpX5OH9Y/view?usp=sharing](https://drive.google.com/file/d/1l_0rhZgxs2FK8jHkyU85nPDUqpX5OH9Y/view)
+Report :[ https://drive.google.com/file/d/1l_0rhZgxs2FK8jHkyU85nPDUqpX5OH9Y/view?usp=sharing](https://drive.google.com/file/d/1l_0rhZgxs2FK8jHkyU85nPDUqpX5OH9Y/view)
 
 ## Installation
 
