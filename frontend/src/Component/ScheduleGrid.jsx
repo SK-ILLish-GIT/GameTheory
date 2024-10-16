@@ -82,7 +82,7 @@ const ScheduleGrid = () => {
       setCentersLoading(true);
       setCentersError(null);
       try {
-        const response = await fetch(`${process.env.BACKEND_URL}/api/centre/getCentre`);
+        const response = await fetch(`https://gametheory-9xjf.onrender.com/api/centre/getCentre`);
         if (!response.ok) {
           throw new Error(`Error fetching centers: ${response.statusText}`);
         }
@@ -111,7 +111,7 @@ const ScheduleGrid = () => {
       setSportsLoading(true);
       setSportsError(null);
       try {
-        const response = await fetch(`${process.env.BACKEND_URL}/api/sport/getSport?centreId=${selectedCenterId}`);
+        const response = await fetch(`https://gametheory-9xjf.onrender.com/api/sport/getSport?centreId=${selectedCenterId}`);
         if (!response.ok) {
           throw new Error(`Error fetching sports: ${response.statusText}`);
         }
@@ -145,7 +145,7 @@ const ScheduleGrid = () => {
     setCourtsLoading(true);
     setCourtsError(null);
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/court/getCourt?sport=${sportId}&center=${centerId}`);
+      const response = await fetch(`https://gametheory-9xjf.onrender.com/api/court/getCourt?sport=${sportId}&center=${centerId}`);
       if (!response.ok) {
         throw new Error(`Error fetching courts: ${response.statusText}`);
       }
@@ -178,7 +178,7 @@ const ScheduleGrid = () => {
     setAvailableSlots([]);
 
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/schedule/availableSlots?centre=${selectedCenterId}&sport=${selectedSport}&court=${selectedCourt}&date=${selectedDate}`);
+      const response = await fetch(`https://gametheory-9xjf.onrender.com/api/schedule/availableSlots?centre=${selectedCenterId}&sport=${selectedSport}&court=${selectedCourt}&date=${selectedDate}`);
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.message || "Error fetching available slots.");
@@ -244,7 +244,7 @@ const ScheduleGrid = () => {
     };
 
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/booking/createBooking`, {
+      const response = await fetch(`https://gametheory-9xjf.onrender.com/api/booking/createBooking`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
