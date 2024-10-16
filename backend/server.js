@@ -22,6 +22,8 @@ app.use("/api/centre", centreroute);
 app.use("/api/court",courtRoute);
 app.use("/api/schedule", scheduleRoute);
 
+
+
 app.listen(port, () => {
     console.log(`server is on on http:localhost:${port}`)
 })
